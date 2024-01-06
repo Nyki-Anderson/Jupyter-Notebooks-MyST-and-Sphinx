@@ -1,0 +1,20 @@
+{
+  "name": "lua_programming",
+  "version": "1.0.0",
+  "description": "The workspace for learning the Lua Programming language and features packages that integrate with Jupyter Notebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lua",
+    "jupyter",
+    "myst",
+    "xeus"
+  ],
+  "author": "Nyki Anderson",
+  "license": "MIT",
+  "dependencies": {
+    "ijavascript": "^5.2.1"
+  }
+}

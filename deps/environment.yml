@@ -1,0 +1,23 @@
+name: jupyter-lua
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - ipython
+  - ipykernel
+  - cmake
+  - xeus
+  - xwidgets
+  - nlohmann_json
+  - cppzmq
+  - xtl
+  - lua
+  - jupyterlab
+  - ca-certificates
+  - openssl
+  - xeus-zmq
+  - nodejs
+  - mystmd
+  - sphinx
+prefix: /opt/homebrew/Caskroom/miniconda/base/envs/jupyter-lua
