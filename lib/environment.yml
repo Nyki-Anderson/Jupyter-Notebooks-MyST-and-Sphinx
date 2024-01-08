@@ -252,4 +252,7 @@ dependencies:
     - xcanvas==1.21
     - pyarrow==14.0.2
     - pylance==0.9.5
+    - myst_nb==1.16.0
+    - jupyter_sphinx==0.2.2
+    - nbsphinx==6.3.3
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/jupyter
