@@ -16,7 +16,7 @@ jobs:
           pip install sphinx sphinx_pdj_theme myst_parser nbsphinx jupyter_sphinx myst_nb
       - name: Sphinx build
         run: |
-          sphinx-build docs/source/index.rst docs/build/html/index.html
+          sphinx-build docs/source docs/build/html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
