@@ -22,7 +22,6 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx.ext.githubpages",
-    "jupyter_sphinx",
     "myst_nb"
 ]
 
