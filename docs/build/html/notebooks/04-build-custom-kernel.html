@@ -1,0 +1,293 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="">
+    <link rel="icon" type="image/x-icon" href="">
+
+  
+  <title>Building a Custom Jupyter Notebook Kernel &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+
+
+  <link rel="stylesheet" href="../_static/css/img.css" type="text/css"/>
+  
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+  
+
+  
+
+  <link rel="stylesheet" href="../_static/css/darker.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation" href="../index.html"/>
+        <link rel="prev" title="Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks" href="03-sphinx-config.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+	
+        <a href="../index.html" class="fa fa-home"> Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality HTML & LaTeX Documents </a>
+	
+	
+        <div role="search">
+	  
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	  
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-automating-setup.html">How to Automate Python Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#outline-of-project">Outline of Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#developing-the-script">Developing the Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#running-the-script">Running the Script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01-automating-setup.html#next-steps">Next Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html">MyST Markdown and Jupyter Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#getting-started-with-myst-sphinx">Getting Started with MyST &amp; Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#frontmatter">Frontmatter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#where-to-set-frontmatter">Where to set frontmatter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#available-frontmatter-fields">Available frontmatter fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#field-behavior">Field Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#thumbnail-banner">Thumbnail &amp; Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#affiliations">Affiliations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#licenses">Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#funding">Funding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#venue">Venue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#biblio">Biblio</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#settings">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#available-settings-fields">Available settings fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#more-from-myst-markdown">More From MyST Markdown</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#project-goals">Project Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#installing-the-myst-markdown-cli">Installing the MyST Markdown CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#circle-back-at-a-later-date">Circle Back at a Later Date</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03-sphinx-config.html">Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03-sphinx-config.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-sphinx-config.html#getting-started-with-sphinx">Getting Started with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Building a Custom Jupyter Notebook Kernel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-xeus-to-author-custom-kernels">Using <code class="docutils literal notranslate"><span class="pre">xeus</span></code> to Author Custom Kernels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementing-a-kernel">Implementing a Kernel</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality HTML & LaTeX Documents </a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+      	<div id="dark-mode-toggle-container">
+	  <dark-mode-toggle appearance="toggle" dark="switch to light mode" light="switch to dark mode">
+	  </dark-mode-toggle>
+	</div>
+  <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Custom Kernel</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This Notebook will detail how to implement a customer kernel with support for IPython which Xeus-Lua does not do out-of-the-box.</span>
+<span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2024-01-04</span>
+<span class="nt">jupytext</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">formats</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md:myst</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">text-representation</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">--vscode-font-family</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lmroman17-regular&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+    body {
+        --vscode-font-family: "lmroman17-regular"
+    }
+</style>
+</div></div>
+</div>
+<section id="building-a-custom-jupyter-notebook-kernel">
+<h1>Building a Custom Jupyter Notebook Kernel<a class="headerlink" href="#building-a-custom-jupyter-notebook-kernel" title="Link to this heading">¶</a></h1>
+<p>I found when starting the <a class="reference external" href="https://www.udemy.com/share/10a9Qq3&#64;bsv9B0_-y2oIqI8dNeFs0eOv7PG5VL1JESM-yN0Mw9HtaVPeFRODH5bI3g_TOZw=/">Lua Programming Udemy course</a> that the stock <code class="docutils literal notranslate"><span class="pre">xeus-lua</span></code> kernel was not dynamic enough to allow so-called <em>magic</em> commands offered by the IPython Kernel. Specifically, I could not run the <code class="docutils literal notranslate"><span class="pre">lua</span></code> code as files that receive user input.</p>
+<p>In reaction –and at risk of becoming too granular– I am taking this opportunity to learn how to build my own custom Jupyter kernel.</p>
+<p>:::{important} Objectives
+The objective of this exercise is to build a custom <code class="docutils literal notranslate"><span class="pre">lua</span></code> kernel that allows for the use of magic <code class="docutils literal notranslate"><span class="pre">shell</span></code> commands within the <code class="docutils literal notranslate"><span class="pre">lua</span></code> code cells.
+:::</p>
+<section id="using-xeus-to-author-custom-kernels">
+<h2><a class="reference external" href="https://xeus.readthedocs.io/en/latest/usage.html">Using <code class="docutils literal notranslate"><span class="pre">xeus</span></code> to Author Custom Kernels</a><a class="headerlink" href="#using-xeus-to-author-custom-kernels" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">xeus</span></code> enables custom kernel authors to implement Jupyter kernels more easily. It takes the burden of implementing the Jupyter Kernel protocol so developers can focus on implementing the interpreter part of the kernel.</p>
+<p><img alt="Jupyter Kernel Protocol Diagram" src="../_images/protocol-diagram.jpg" /></p>
+</section>
+<section id="implementing-a-kernel">
+<h2><a class="reference external" href="https://xeus.readthedocs.io/en/latest/kernel_implementation.html">Implementing a Kernel</a><a class="headerlink" href="#implementing-a-kernel" title="Link to this heading">¶</a></h2>
+<p>In most of the cases, the base kernel implementation is enough, and creating a kernel only means implementing the interpreter part.</p>
+<p>The structure of our project should at least look like the following:</p>
+<p><img alt="Planned Directory Structure" src="../_images/planned-dir.jpg" /></p>
+</section>
+</section>
+
+
+	    </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="03-sphinx-config.html" class="btn btn-neutral" title="Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2024, N. L. Dentinger-Anderson, C. L. Dentinger-Valentine.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="https://poraodojuca.dev">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/thebelab-helper.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

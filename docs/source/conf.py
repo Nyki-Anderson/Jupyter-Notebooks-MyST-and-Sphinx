@@ -3,11 +3,6 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import sphinx_pdj_theme
-import sys, os
-sys.path.append(os.path.abspath("./_pygments"))
-
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -40,11 +35,12 @@ templates_path = [
 # The suffix(es) of source filenames.
 source_suffix = [
     '.ipynb',
-    '.md'
+    '.md',
+    '.rst' 
 ]
 
 # The master toctree document.
-master_doc = 'index.rst'
+master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.
 exclude_patterns = [
@@ -62,15 +58,10 @@ pygements_style = 'style.StarofficeStyle'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_pdj_theme'
-html_static_path = ['sphinx_pdj_theme.get_html_theme_path()']
+html_static_path = []
 # html_logo = 'path/to/logo.svg'
 # html_favicon = 'path/to/favicon.ico'
-html_theme_options = {
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'collapse_navigation': False,
-    'style_external_links': True,
-}
+html_theme_options = {}
 
 # -- Options for LaTeX output -------------------------------------------------
 

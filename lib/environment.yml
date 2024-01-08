@@ -248,4 +248,8 @@ dependencies:
   - zlib=1.2.13=h53f4e23_5
   - zstandard=0.22.0=py312h7975427_0
   - zstd=1.5.5=h4f39d0f_0
+  - pip:
+    - xcanvas==1.21
+    - pyarrow==14.0.2
+    - pylance==0.9.5
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/jupyter
