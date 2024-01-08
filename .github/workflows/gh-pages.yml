@@ -1,0 +1,38 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: ./scripts/02-build-env.sh
+
+      - run: sphinx-build docs/source docs/build/html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: github.ref == 'refs/heads/main'
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: docs/build/html
