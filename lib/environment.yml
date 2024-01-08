@@ -253,4 +253,5 @@ dependencies:
     - pyarrow==14.0.2
     - pylance==0.9.5
     - myst_nb==1.0.0
+    - virtualenv=20.25.0
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/jupyter
