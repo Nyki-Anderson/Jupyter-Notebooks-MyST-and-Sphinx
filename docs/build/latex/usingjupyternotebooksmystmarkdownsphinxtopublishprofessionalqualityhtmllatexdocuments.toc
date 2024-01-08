@@ -1,0 +1,45 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}How to Automate Python Environment}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Outline of Project}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Prerequisites}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Actions of Program}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Developing the Script}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Running the Script}{8}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Next Steps}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {3}MyST Markdown and Jupyter Notebook}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Getting Started with MyST \& Sphinx}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Frontmatter}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Where to set frontmatter}{15}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}In a MyST markdown file}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}In a Jupyter Notebook}{16}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}In a \sphinxstyleliteralintitle {\sphinxupquote {myst.yml}} file}{16}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Available frontmatter fields}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Field Behavior}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Thumbnail \& Banner}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Authors}{19}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Affiliations}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Date}{23}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Licenses}{23}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Funding}{24}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Venue}{26}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Biblio}{26}{section.5.11}%
+\contentsline {chapter}{\numberline {6}Settings}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Available settings fields}{27}{section.6.1}%
+\contentsline {chapter}{\numberline {7}More From MyST Markdown}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Key Features}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Project Goals}{29}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Built for Science}{30}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Dynamic Documents}{30}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Fast \& Accessible}{30}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Technical Goals}{30}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Installing the MyST Markdown CLI}{30}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Prerequisites \sphinxhyphen {} Install Node}{31}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Install the MyST CLI}{31}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Circle Back at a Later Date}{31}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Configuring Sphinx to Render HTML \& PDF Versions of Jupyter Notebooks}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Prerequisites}{33}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Getting Started with Sphinx}{34}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Building a Custom Jupyter Notebook Kernel}{37}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Using \sphinxstyleliteralintitle {\sphinxupquote {xeus}} to Author Custom Kernels}{37}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Implementing a Kernel}{38}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Indices and tables}{41}{chapter.10}%
