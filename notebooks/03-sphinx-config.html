@@ -1,0 +1,301 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="">
+    <link rel="icon" type="image/x-icon" href="">
+
+  
+  <title>Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+
+
+  <link rel="stylesheet" href="../_static/css/img.css" type="text/css"/>
+  
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/pdj.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/jupyter-sphinx.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/thebelab.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+  
+
+  
+
+  <link rel="stylesheet" href="../_static/css/darker.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation" href="../index.html"/>
+        <link rel="next" title="Building a Custom Jupyter Notebook Kernel" href="04-build-custom-kernel.html"/>
+        <link rel="prev" title="MyST Markdown and Jupyter Notebook" href="02-myst.integration.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script type="module" src="https://googlechromelabs.github.io/dark-mode-toggle/src/dark-mode-toggle.mjs"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+	
+        <a href="../index.html" class="fa fa-home"> Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality HTML & LaTeX Documents </a>
+	
+	
+        <div role="search">
+	  
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	  
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-automating-setup.html">How to Automate Python Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#outline-of-project">Outline of Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#developing-the-script">Developing the Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-automating-setup.html#running-the-script">Running the Script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01-automating-setup.html#next-steps">Next Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html">MyST Markdown and Jupyter Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#getting-started-with-myst-sphinx">Getting Started with MyST &amp; Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#frontmatter">Frontmatter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#where-to-set-frontmatter">Where to set frontmatter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#available-frontmatter-fields">Available frontmatter fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#field-behavior">Field Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#thumbnail-banner">Thumbnail &amp; Banner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#affiliations">Affiliations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#licenses">Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#funding">Funding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#venue">Venue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#biblio">Biblio</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#settings">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#available-settings-fields">Available settings fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-myst.integration.html#more-from-myst-markdown">More From MyST Markdown</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#project-goals">Project Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#installing-the-myst-markdown-cli">Installing the MyST Markdown CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-myst.integration.html#circle-back-at-a-later-date">Circle Back at a Later Date</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started-with-sphinx">Getting Started with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04-build-custom-kernel.html">Building a Custom Jupyter Notebook Kernel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04-build-custom-kernel.html#using-xeus-to-author-custom-kernels">Using <code class="docutils literal notranslate"><span class="pre">xeus</span></code> to Author Custom Kernels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04-build-custom-kernel.html#implementing-a-kernel">Implementing a Kernel</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality HTML & LaTeX Documents </a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+      	<div id="dark-mode-toggle-container">
+	  <dark-mode-toggle appearance="toggle" dark="switch to light mode" light="switch to dark mode">
+	  </dark-mode-toggle>
+	</div>
+  <section id="configuring-sphinx-to-render-html-pdf-versions-of-jupyter-notebooks">
+<h1>Configuring Sphinx to Render HTML &amp; PDF Versions of Jupyter Notebooks<a class="headerlink" href="#configuring-sphinx-to-render-html-pdf-versions-of-jupyter-notebooks" title="Link to this heading">¶</a></h1>
+<div class="admonition-objectives admonition">
+<p class="admonition-title">Objectives</p>
+<p>The objectives for this notebook are as follows:</p>
+<ul class="simple">
+<li><p>Integrate MyST Markdown and Sphinx documentation tools to produce a beautifully rendered HTML page on GitHub pages as well as a nicely formatted LaTeX-generated PDF.</p></li>
+<li><p>Understand how to properly configure and add metadata to the document as a whole as well as at the notebook-level.</p></li>
+<li><p>Begin to customize the entire pipeline so that it is both automated and efficient.</p></li>
+</ul>
+</div>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<p>It is highly recommended that you use the <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment scripts found in the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> folder. They can be run from the root directory like this:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">755</span><span class="w"> </span>scripts/
+./scripts/02-build-env.sh<span class="w"> </span>&lt;PATH_TO_ROOT&gt;
+</pre></div>
+</div>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">&lt;PATH_TO_ROOT&gt;</span></code> is passed here as an argument to the script, therefore it must be absolute. You can find this variable by simple typing <code class="docutils literal notranslate"><span class="pre">pwd</span></code> from the root directory of the project.</p>
+</div>
+<p>Close all terminals and start a fresh session. To be certain that the environment you just built is your active <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>jupyter
+</pre></div>
+</div>
+<p>You can now navigate to your project root folder and issue the command to open with VS Code:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>code<span class="w"> </span>Jupyter-Notebooks-MyST-and-Sphinx/
+</pre></div>
+</div>
+<p>A fresh instance of your project will open in VS Code. Now enter the command pallet <code class="docutils literal notranslate"><span class="pre">CMD-Shift-P</span></code> and select <code class="docutils literal notranslate"><span class="pre">Python:</span> <span class="pre">Select</span> <span class="pre">Interpreter</span></code>. Choose the version with the name of your <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment, it should be named <code class="docutils literal notranslate"><span class="pre">jupyter</span></code>.</p>
+<p>Next create a <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder in the root directory and inside of it, create a <code class="docutils literal notranslate"><span class="pre">notebooks/</span></code> folder. This will be where we keep all of our notebooks.</p>
+<p>Start your first Jupyter notebook by creating a file with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and open that file. Create a new Markdown cell and type some dummy info. We will need content to test our configuration of Sphinx and the other tools.</p>
+<p>Now we can begin the deep-dive into the Sphinx and MyST-NB configuration process.</p>
+</section>
+<section id="getting-started-with-sphinx">
+<h2>Getting Started with Sphinx<a class="headerlink" href="#getting-started-with-sphinx" title="Link to this heading">¶</a></h2>
+<div class="admonition-documentation admonition">
+<p class="admonition-title">Documentation</p>
+<p>For the full Sphinx Documentation visit<a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html"> sphinx-doc.org</a>. There are a lot of options… Sphinx is highly complex so I have tried to distill it down in these notebooks for you. Still, the documentation will provide all configuration options available for a more custom experience.</p>
+</div>
+<p>I used a wonderful OBM Research Group tutorial <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> to configure most of Sphinx, though I tried my hand manually and had my fair share of trial and error.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Tutorial: <a class="reference external" href="https://obm.physics.metu.edu.tr/node/65">Sphinx environment with Conda</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+	    </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04-build-custom-kernel.html" class="btn btn-neutral float-right" title="Building a Custom Jupyter Notebook Kernel">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02-myst.integration.html" class="btn btn-neutral" title="MyST Markdown and Jupyter Notebook"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2024, N. L. Dentinger-Anderson, C. L. Dentinger-Valentine.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="https://poraodojuca.dev">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../_static/documentation_options.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js">
+
+    </script>
+    <script type="text/javascript" src="../_static/thebelab-helper.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js">
+
+    </script>
+    <script type="text/javascript" src="../https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>
