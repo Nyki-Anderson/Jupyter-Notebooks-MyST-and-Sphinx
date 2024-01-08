@@ -1,20 +1,31 @@
 {
-  "name": "lua_programming",
+  "name": "jupyter-notebooks-myst-and-sphinx",
   "version": "1.0.0",
-  "description": "The workspace for learning the Lua Programming language and features packages that integrate with Jupyter Notebook.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "This project has started to splinter into many topics including using Jupyter Notebooks, MyST Markdown, and Sphinx to document and publish technical documents; building a custom Jupyter kernel; and automated build environments.",
   "keywords": [
-    "lua",
     "jupyter",
     "myst",
-    "xeus"
+    "sphinx"
   ],
   "author": "Nyki Anderson",
   "license": "MIT",
   "dependencies": {
     "ijavascript": "^5.2.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nyki-Anderson/Jupyter-Notebooks-MyST-and-Sphinx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nyki-Anderson/Jupyter-Notebooks-MyST-and-Sphinx/issues"
+  },
+  "homepage": "https://github.com/Nyki-Anderson/Jupyter-Notebooks-MyST-and-Sphinx#readme",
+  "main": "n",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
