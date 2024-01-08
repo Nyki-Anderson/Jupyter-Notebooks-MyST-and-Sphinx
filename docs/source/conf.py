@@ -27,21 +27,32 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx.ext.githubpages",
+    "nbsphinx",
     "jupyter_sphinx",
     "myst_nb"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = [
+    '_templates'
+]
 
 # The suffix(es) of source filenames.
-source_suffix = ['.ipynb', '.md']
+source_suffix = [
+    '.ipynb',
+    '.md'
+]
 
 # The master toctree document.
 master_doc = 'index.rst'
 
 # List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = [
+    '_build',
+    'Thumbs.db',
+    '.DS_Store',
+    'lib'
+]
 
 # The name of hte Pygments (syntax highlighting) style to use.
 pygements_style = 'style.StarofficeStyle'

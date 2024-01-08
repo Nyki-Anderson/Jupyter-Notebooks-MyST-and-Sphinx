@@ -10,7 +10,10 @@ Welcome to Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professio
    :maxdepth: 2
    :caption: Contents:
 
-
+   notebooks/00-jupyter-config
+   notebooks/01-automating-setup
+   notebooks/02-myst-integration
+   notebooks/03-sphinx-config
 
 Indices and tables
 ==================
