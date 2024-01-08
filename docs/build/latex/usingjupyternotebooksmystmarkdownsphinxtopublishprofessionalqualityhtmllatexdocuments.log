@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.22)  8 JAN 2024 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.22)  8 JAN 2024 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,56 +914,54 @@ al/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}] [2
 
 ]
 (./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
-documents.toc [1
-
-]
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 4
-3.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
+documents.toc
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 8
+.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ))
 \tf@toc=\write6
 \openout6 = `usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualit
 yhtmllatexdocuments.toc'.
 
- [2]
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <12> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 92.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
 [1
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[2
+] [2
 
 ]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
-36.
+08.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<lua-dir.jpg, id=257, 712.16063pt x 885.3075pt>
-File: lua-dir.jpg Graphic file (type jpg)
-<use lua-dir.jpg>
-Package pdftex.def Info: lua-dir.jpg  used on input line 176.
-(pdftex.def)             Requested size: 469.7558pt x 584.00755pt.
+) [1
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+<00-html-preview-1.jpg, id=100, 1903.11pt x 1084.05pt>
+File: 00-html-preview-1.jpg Graphic file (type jpg)
+<use 00-html-preview-1.jpg>
+Package pdftex.def Info: 00-html-preview-1.jpg  used on input line 143.
+(pdftex.def)             Requested size: 469.7362pt x 267.57126pt.
+<00-html-preview-2.jpg, id=101, 1903.11pt x 1084.05pt>
+File: 00-html-preview-2.jpg Graphic file (type jpg)
+<use 00-html-preview-2.jpg>
+Package pdftex.def Info: 00-html-preview-2.jpg  used on input line 150.
+(pdftex.def)             Requested size: 469.7362pt x 267.57126pt.
+<00-pdf-preview-1.jpg, id=102, 692.5875pt x 898.85812pt>
+File: 00-pdf-preview-1.jpg Graphic file (type jpg)
+<use 00-pdf-preview-1.jpg>
+Package pdftex.def Info: 00-pdf-preview-1.jpg  used on input line 157.
+(pdftex.def)             Requested size: 173.14644pt x 224.71397pt.
+<00-pdf-preview-2.jpg, id=103, 691.08188pt x 892.83563pt>
+File: 00-pdf-preview-2.jpg Graphic file (type jpg)
+<use 00-pdf-preview-2.jpg>
+Package pdftex.def Info: 00-pdf-preview-2.jpg  used on input line 164.
+(pdftex.def)             Requested size: 172.75949pt x 223.20836pt.
+<00-final-dir.jpg, id=104, 519.44063pt x 874.76813pt>
+File: 00-final-dir.jpg Graphic file (type jpg)
+<use 00-final-dir.jpg>
+Package pdftex.def Info: 00-final-dir.jpg  used on input line 174.
+(pdftex.def)             Requested size: 129.85191pt x 218.67815pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -973,7 +971,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
 
-[4]
+[2 <./00-html-preview-1.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 27.58002pt, for example:
@@ -982,9 +980,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
 
-[5 <./lua-dir.jpg>]
-LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <12> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 228.
+[3 <./00-html-preview-2.jpg> <./00-pdf-preview-1.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.58002pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.58002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
+
+[4 <./00-pdf-preview-2.jpg> <./00-final-dir.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.58002pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.58002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
+
+[5]
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <14.4> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 263.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1014,296 +1030,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 Chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-311.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/ts1txtt.fd
-File: ts1txtt.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <12> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 321.
-
- [9
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[10
-
-]
-Chapter 3.
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[12
-
-]
-Chapter 4.
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[14
-
-]
-Chapter 5.
-[15]
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 401.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[17]
-<banner.jpg, id=325, 1409.265pt x 1007.26312pt>
-File: banner.jpg Graphic file (type jpg)
-<use banner.jpg>
-Package pdftex.def Info: banner.jpg  used on input line 559.
-(pdftex.def)             Requested size: 469.74669pt x 335.74843pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[18 <./banner.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[20]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[21]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[24]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[25]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[26]
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1059
-[]\T1/txtt/m/n/12 output_stderr \T1/qtm/m/n/12 : Re-move, warn, or er-ror on \T
-1/txtt/m/n/12 stderr \T1/qtm/m/n/12 out-puts (e.g.,
- []
-
-[27
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[28]
-Chapter 7.
-[29
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[32]
-Chapter 8.
-[33
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[34]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[35]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[36
-
-]
-Chapter 9.
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <17.28> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1429.
-
-<protocol-diagram.jpg, id=416, 1029.8475pt x 930.47626pt>
-File: protocol-diagram.jpg Graphic file (type jpg)
-<use protocol-diagram.jpg>
-Package pdftex.def Info: protocol-diagram.jpg  used on input line 1435.
-(pdftex.def)             Requested size: 469.7442pt x 424.40381pt.
-[37]
-<planned-dir.jpg, id=422, 941.01563pt x 618.81187pt>
-File: planned-dir.jpg Graphic file (type jpg)
-<use planned-dir.jpg>
-Package pdftex.def Info: planned-dir.jpg  used on input line 1447.
-(pdftex.def)             Requested size: 469.76001pt x 308.95195pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[38 <./protocol-diagram.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[39 <./planned-dir.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 27.58002pt, for example:
-(fancyhdr)                \setlength{\headheight}{27.58002pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
-
-[40
-
-]
-Chapter 10.
 
 (./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
-documents.ind) [41]
+documents.ind) [9
+
+]
 (./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
 documents.aux)
  ***********
@@ -1312,32 +1043,27 @@ L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `usingjupyternotebooksmystmarkdownsphinxtopub
 lishprofessionalqualityhtmllatexdocuments.out' has not changed.
-(rerunfilecheck)             Checksum: 307263382AA516A17E77206FF1440B3C;7098.
+(rerunfilecheck)             Checksum: 22276305CF8CCC5BF95376DFF2E5B4A0;2715.
  ) 
 Here is how much of TeX's memory you used:
- 16630 strings out of 474175
- 279784 string characters out of 5745668
- 1992457 words of memory out of 5000000
- 38423 multiletter control sequences out of 15000+600000
- 626505 words of font info for 105 fonts, out of 8000000 for 9000
+ 16418 strings out of 474175
+ 276027 string characters out of 5745668
+ 1936457 words of memory out of 5000000
+ 38303 multiletter control sequences out of 15000+600000
+ 611586 words of font info for 85 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 72i,12n,79p,1494b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2023/
-texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2023/texmf
--dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/
-fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/
-type1/public/txfonts/tcxtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
-urw/times/utmr8a.pfb>
+ 72i,11n,79p,936b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb></usr/loca
+l/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2023/t
+exmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
 Output written on usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalq
-ualityhtmllatexdocuments.pdf (45 pages, 798326 bytes).
+ualityhtmllatexdocuments.pdf (13 pages, 1223322 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

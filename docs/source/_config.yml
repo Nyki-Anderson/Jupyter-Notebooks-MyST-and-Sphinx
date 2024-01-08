@@ -1,0 +1,72 @@
+title: Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality HTML & LaTeX Documents
+description: The purpose of this project is to streamline the publishing process for professional-quality scientific reports, books, and documentation. For these purposes, we will be using Jupyter Notebook, MyST Markdown, and Sphinx Documentation. These tools will serve as the backbone to our metadata-rich content, bringing depth and accessibility to the final products (a static HTML site and accompanying PDF book).
+short_title: Jupyter, MyST, & Sphinx Integration
+copyright: 2024
+tags:
+  - jupyter
+  - myst
+  - sphinx
+  - publish
+  - html
+  - latex
+authors: 
+  - name: N. L. Dentinger-Anderson
+    email: nyki.l.anderson@gmail.com
+    github: Nyki-Anderson
+    city: Sterling
+    state: Virginia
+    country: United States
+    roles: 
+      - Analysis
+      - Investigation
+      - Methodology
+      - Software
+      - Writing
+  - name: C. L. Dentinger-Valentine
+    email: eyeofcrow76@yahoo.com
+    city: Puyallup
+    state: Washington
+    country: United States
+    roles:  
+      - Conceptualization
+      - Analysis
+      - Investigation
+      - Supervision
+      - Review
+license: MIT
+exclude_patterns:
+  - _build 
+  - Thumbs.db
+  - DS_Store
+
+# Execution Settings
+execute:
+  execute_notebooks: cache
+  allow_errors: false
+  stderr_output: show
+
+# Parse and Render Settings
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - smartquotes
+    - tasklist
+  myst_url_schemes: 
+    - mailto
+    - http
+    - https
+
+# LaTeX-Specific Settings
+latex:
+  latex_engine: xelatex
+  use_jupyterbook_latex: true
+
+# Sphinx-Specific Settings
+sphinx:
+  config:
+    language: en

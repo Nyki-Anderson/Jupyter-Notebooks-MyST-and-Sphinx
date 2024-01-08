@@ -7,13 +7,10 @@ Welcome to Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professio
 ===================================================================================================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 5
+   :caption: Table of Contents:
 
-   notebooks/01-automating-setup
-   notebooks/02-myst.integration
-   notebooks/03-sphinx-config
-   notebooks/04-build-custom-kernel
+   _notebooks/00-the-goal
 
 Indices and tables
 ==================

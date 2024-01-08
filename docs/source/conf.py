@@ -34,9 +34,10 @@ templates_path = [
 
 # The suffix(es) of source filenames.
 source_suffix = [
+    '.rst',
     '.ipynb',
-    '.md',
-    '.rst' 
+    '.myst',
+    '.md'
 ]
 
 # The master toctree document.
@@ -51,7 +52,7 @@ exclude_patterns = [
 ]
 
 # The name of hte Pygments (syntax highlighting) style to use.
-pygements_style = 'style.StarofficeStyle'
+pygements_style = 'style.NordStyle'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -62,6 +63,12 @@ html_static_path = []
 # html_logo = 'path/to/logo.svg'
 # html_favicon = 'path/to/favicon.ico'
 html_theme_options = {}
+
+myst_html_meta = {
+    "description lang=en": "The purpose of this project is to streamline the publishing process for professional-quality scientific reports, books, and documentation. For these purposes, we will be using Jupyter Notebook, MyST Markdown, and Sphinx Documentation. These tools will serve as the backbone to our metadata-rich content, bringing depth and accessibility to the final products (a static HTML site and accompanying PDF book).",
+    "keywords": "Sphinx, MyST, Jupyter Notebook, HTML, PDF",
+    "property=og:locale":  "en_US"
+}
 
 # -- Options for LaTeX output -------------------------------------------------
 
