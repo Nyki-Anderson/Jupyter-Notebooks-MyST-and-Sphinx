@@ -16,6 +16,8 @@ sphinx:
   configuration: docs/source/conf.py
   fail_on_warning: true
 
-formats: all
+formats:
+  - epub
+  - pdf
 conda:
   environment: lib/environment.yml
