@@ -11,6 +11,9 @@ Using Jupyter Notebooks, MyST Markdown, & Sphinx to Publish Professional Quality
    :caption: Table of Contents:
 
    _notebooks/00-the-goal
+   _notebooks/01-the-env
+   _notebooks/02-the-config
+   _notebooks/03-the-deploy
 
 Indices and tables
 ==================

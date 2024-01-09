@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="">
 
   
-  <title>&lt;no title&gt; &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
+  <title>The Deployment: Publishing Our Work in its Finest Format &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
   
 
   
@@ -40,6 +40,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation" href="../index.html"/>
+        <link rel="prev" title="The Configuration: Integrating Three Tools into One" href="02-the-config.html"/>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="cache-control" content="public" />
@@ -78,7 +79,7 @@
           
           
               <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="00-the-goal.html">The Goal: A Publishing Environment for Static HTML &amp; LaTeX PDF</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#the-results">The Results</a></li>
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#the-road-ahead">The Road Ahead</a></li>
@@ -86,6 +87,12 @@
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#closing-remarks">Closing Remarks</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="01-the-env.html">The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01-the-env.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-the-config.html">The Configuration: Integrating Three Tools into One</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Deployment: Publishing Our Work in its Finest Format</a></li>
 </ul>
 
           
@@ -129,10 +136,31 @@
 	  <dark-mode-toggle appearance="toggle" dark="switch to light mode" light="switch to dark mode">
 	  </dark-mode-toggle>
 	</div>
-  
+  <section id="the-deployment-publishing-our-work-in-its-finest-format">
+<h1>The Deployment: Publishing Our Work in its Finest Format<a class="headerlink" href="#the-deployment-publishing-our-work-in-its-finest-format" title="Link to this heading">¶</a></h1>
+<p>The purpose of this whole venture was to produce professional quality deliverables that let the content speak for itself. In this chapter, we will introduce a few of the options for doing so –for free– including publishing our static documentation site on <a class="reference external" href="https://pages.github.com/">GitHub Pages</a> via three methods: (1) using the <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> command at the command line (which was the only way I got working so far), (2) <a class="reference external" href="https://docs.github.com/en/actions">Actions and Workflows</a>, and (3) from a branch. As well as a third method which involves publishing through your GitHub repository to the <a class="reference external" href="https://docs.readthedocs.io/en/stable/">Read the Docs</a> client.</p>
+<div class="admonition-objectives admonition">
+<p class="admonition-title">Objectives</p>
+<p>This chapter is due to wrap up the main purpose of the project, which was to share our documentation and ideas with a greater audience. To that aim, we will:</p>
+<ul class="simple">
+<li><p>Finalize any content we wish to publish and determine the format(s) we are confident will reach the broadest audience or satisfy whatever deliverables we might have.</p></li>
+<li><p>Produce both a collection of linkable static web scripts as well as a LaTeX-rendered PDF printout worthy of professional scrutiny.</p></li>
+<li><p>Determine which methods of distribution work, which are more difficult or situation-biased, and which fit best with our current workflow.</p></li>
+<li><p>Clear up any remaining configuration errors and answer lingering examples of broken code or functionality.</p></li>
+</ul>
+</div>
+</section>
+
 
 	    </div>
             <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="02-the-config.html" class="btn btn-neutral" title="The Configuration: Integrating Three Tools into One"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

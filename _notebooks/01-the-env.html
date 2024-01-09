@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="">
 
   
-  <title>&lt;no title&gt; &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
+  <title>The Environment: A Local conda Installation &mdash; Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation</title>
   
 
   
@@ -40,6 +40,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation" href="../index.html"/>
+        <link rel="next" title="The Configuration: Integrating Three Tools into One" href="02-the-config.html"/>
+        <link rel="prev" title="The Goal: A Publishing Environment for Static HTML &amp; LaTeX PDF" href="00-the-goal.html"/>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="cache-control" content="public" />
@@ -78,7 +80,7 @@
           
           
               <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="00-the-goal.html">The Goal: A Publishing Environment for Static HTML &amp; LaTeX PDF</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#the-results">The Results</a></li>
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#the-road-ahead">The Road Ahead</a></li>
@@ -86,6 +88,12 @@
 <li class="toctree-l2"><a class="reference internal" href="00-the-goal.html#closing-remarks">Closing Remarks</a></li>
 </ul>
 </li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-the-config.html">The Configuration: Integrating Three Tools into One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-the-deploy.html">The Deployment: Publishing Our Work in its Finest Format</a></li>
 </ul>
 
           
@@ -129,10 +137,43 @@
 	  <dark-mode-toggle appearance="toggle" dark="switch to light mode" light="switch to dark mode">
 	  </dark-mode-toggle>
 	</div>
-  
+  <section id="the-environment-a-local-conda-installation">
+<h1>The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Installation<a class="headerlink" href="#the-environment-a-local-conda-installation" title="Link to this heading">¶</a></h1>
+<p>Now that we can start in with the actual coding, let’s get our ducks in a row. This chapter will focus on installing, building, and fine-tuning our development environment, all of which will run on a <code class="docutils literal notranslate"><span class="pre">Python</span></code> virtual environment. This will be done locally for a number of reasons which may all become clear later in the <a class="reference internal" href="#why-a-virtual-environment"><span class="std std-ref">Why A Virtual Environment?</span></a>. All of this will allow us to use a <code class="docutils literal notranslate"><span class="pre">python3.12</span></code> kernel for use within the Jupyter Notebook interface.</p>
+<div class="admonition-objectives admonition">
+<p class="admonition-title">Objectives</p>
+<p>The aim of this chapter is to:</p>
+<ul class="simple">
+<li><p>Fully characterize the set of packages, tools, and other considerations that are required for Jupyter Notebook to function properly throughout its use.</p></li>
+<li><p>Determine what (if any) limitations we will have when developing a build-time script for a local <code class="docutils literal notranslate"><span class="pre">conda</span></code> virtual environment vs. installing our full build into the <code class="docutils literal notranslate"><span class="pre">base</span></code> environment.</p></li>
+<li><p>Automate the build process with a single command and test that environment is equivalent to the one we develop initially.</p></li>
+</ul>
+</div>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<p>The setup is fairly specific to the exact tools and their versions, though I did not have any issues that required me to downgrade any packages. Though, keep this detail in mind throughout the project, as any deviations could potentially break the build.</p>
+<p>We will be using VS Code’s local version of the Jupyter Notebook software but little configuration is necessary on that front.</p>
+<section id="why-a-virtual-environment">
+<h3>Why A Virtual Environment?<a class="headerlink" href="#why-a-virtual-environment" title="Link to this heading">¶</a></h3>
+</section>
+<section id="considering-versions">
+<h3>Considering Versions<a class="headerlink" href="#considering-versions" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
 
 	    </div>
             <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="02-the-config.html" class="btn btn-neutral float-right" title="The Configuration: Integrating Three Tools into One">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="00-the-goal.html" class="btn btn-neutral" title="The Goal: A Publishing Environment for Static HTML &amp; LaTeX PDF"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

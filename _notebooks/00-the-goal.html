@@ -40,6 +40,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents  documentation" href="../index.html"/>
+        <link rel="next" title="The Environment: A Local conda Installation" href="01-the-env.html"/>
         <link rel="prev" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents Tutorial" href="../index.html"/>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -87,6 +88,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#closing-remarks">Closing Remarks</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="01-the-env.html">The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01-the-env.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02-the-config.html">The Configuration: Integrating Three Tools into One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-the-deploy.html">The Deployment: Publishing Our Work in its Finest Format</a></li>
 </ul>
 
           
@@ -218,13 +225,13 @@
 <h2>The Road Ahead<a class="headerlink" href="#the-road-ahead" title="Link to this heading">¶</a></h2>
 <p>This is a pretty massive undertaking when I think about the path that has led me to this point in the project. This project started out as research for another project that involved <a class="reference external" href="https://www.lua.org/docs.html">lua</a> programming language and <a class="reference external" href="https://pandoc.org/MANUAL.html">Pandoc</a> exporting. Through much trial and error, I can say that I prefer this solution though it does not directly apply to the application I had before which was to export my <a class="reference external" href="https://help.obsidian.md/Home">Obsidian vault</a> files to PDF elegantly (though it seems within the realm of possibility).</p>
 <p>Still, it has been massively rewarding to go through this process and I hope by sharing it with you, it can make an impact on your productivity too. Here’s a look ahead.</p>
-<section id="the-environment-a-local-conda-environment-to-keep-things-tidy">
-<h3>The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Environment to Keep Things Tidy<a class="headerlink" href="#the-environment-a-local-conda-environment-to-keep-things-tidy" title="Link to this heading">¶</a></h3>
+<section id="the-environment-a-local-conda-installation">
+<h3>The Environment: A Local <code class="docutils literal notranslate"><span class="pre">conda</span></code> Installation<a class="headerlink" href="#the-environment-a-local-conda-installation" title="Link to this heading">¶</a></h3>
 <p>We will utilize <a class="reference external" href="https://www.anaconda.com/download">Anaconda</a> or <a class="reference external" href="https://docs.conda.io/projects/miniconda/en/latest/">Miniconda</a> package manager <a class="reference external" href="https://docs.conda.io/projects/conda/en/stable/">conda</a> for the majority of our environment build. We will of course automate the installation of packages though I will mention a few significant ones more critically. Automation will come in the form of very minimal bash scripting –though I must mention it was much more involved when I was building the <a class="reference external" href="https://xeus-lua.readthedocs.io/en/latest/">xeus-lua kernel</a> from source.</p>
 <p>As new packages are found necessary, the running version control file, <a class="reference download internal" download="" href="../_downloads/1d18f6b09c9492d12160d731b57dbdfc/environment.yml"><span class="xref download myst">lib/environment.yml</span></a> will need to be updated accordingly. Keeping this running “log” of what is being installed is what makes this project so valuable in the long run because you are going to want a portable installation that can adapt to whatever your next publication need is.</p>
 </section>
-<section id="the-configuration-integrating-jupyter-notebook-myst-markdown-sphinx-documentation">
-<h3>The Configuration: Integrating Jupyter Notebook, MyST Markdown, &amp; Sphinx Documentation<a class="headerlink" href="#the-configuration-integrating-jupyter-notebook-myst-markdown-sphinx-documentation" title="Link to this heading">¶</a></h3>
+<section id="the-configuration-integrating-three-tools-into-one">
+<h3>The Configuration: Integrating Three Tools into One<a class="headerlink" href="#the-configuration-integrating-three-tools-into-one" title="Link to this heading">¶</a></h3>
 <p>This will, by far, be the most time consuming section to cover, as it took me days to come to the correct solution for integrating all three tools. There is extensive documentation –as you might guess– for all three of these programs but there are significant holes in communication as far as where configuration directives can legally be called and exactly where to put the files when you figure it out.</p>
 <p>Folding in all three tools was a challenge, made all the harder by the fact that I opted to keep the installations local rather than use something like JupyterLab which actually has MyST Markdown preview capabilities. I stuck with that decision because I wanted to be able to control exactly how much unfinished content was “out there” on a server. I imagine using these tools to publish and finalize rather proprietary information at some point and I wanted to know how to do it in house before considering security implications.</p>
 <div class="admonition-staying-local admonition">
@@ -233,8 +240,8 @@
 </div>
 <p>As far as the configuration files go themselves, they are written in <code class="docutils literal notranslate"><span class="pre">.yml</span></code> mostly with a few exceptions. The Sphinx configuration file is a python script called <a class="reference download internal" download="" href="../_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><span class="xref download myst">conf.py</span></a>, the <a class="reference internal" href="../index.html"><span class="std std-doc">index.rst</span></a> is written in reStructureText (a derivative of Markdown), and there are a couple versions of a <a class="reference download internal" download="" href="../_downloads/24f75eabab1fe4730ed764eb3a94b2a7/Makefile"><span class="xref download myst">Makefile</span></a> –or<a class="reference download internal" download="" href="../_downloads/c4f93c697b5cb1f6f7e8546c0496eb2b/make.bat"><span class="xref download myst">make.bat</span></a>– to bring it all together. Details are best left to that respective chapter.</p>
 </section>
-<section id="the-deployment-publishing-our-work-in-its-best-format">
-<h3>The Deployment: Publishing Our Work in its Best Format<a class="headerlink" href="#the-deployment-publishing-our-work-in-its-best-format" title="Link to this heading">¶</a></h3>
+<section id="the-deployment-publishing-our-work-in-its-finest-format">
+<h3>The Deployment: Publishing Our Work in its Finest Format<a class="headerlink" href="#the-deployment-publishing-our-work-in-its-finest-format" title="Link to this heading">¶</a></h3>
 <p>This was probably the most frustrating part of the whole process because it was dependent on a lot of tools and techniques that I’ve never used before. The greatest difficulty came in the form of learning <a class="reference external" href="https://github.com/features/actions">GitHub Actions and Workflows</a> –or rather, not learning– how to deploy to GitHub Pages in that way. I also experimented with <a class="reference external" href="https://docs.readthedocs.io/en/stable/">Read the Docs</a> deployment which is still tied to a GitHub repository but carries its own documentation and workflows. I found this method much less transparent than the pure GitHub method and eventually found the simplest tutorial ever. In this chapter, we will explore the various methods and how they are supposed to work.</p>
 <p>There is also some value in refining the <code class="docutils literal notranslate"><span class="pre">PDFLatex</span></code> workflow so that it is more customized to the document itself rather than full of assumptions and errors. I find that this method of publishing is more in the wind than the HTML export and that’s because LaTeX is programmatically structured rather without the benefits of the linear progression and infinite scroll of a website. Still, the approach as it stands currently has quite the payoff and is something I am excited to share.</p>
 </section>
@@ -249,6 +256,7 @@
 <li><p>Building a full-service GitHub repo that can be installed using a simple <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> or <code class="docutils literal notranslate"><span class="pre">bash</span></code> script. The project is close on delivering this kind of universality but I am not quite sure how much further I would need to take it, so more research is required.</p></li>
 <li><p>Integrating a more flexible <code class="docutils literal notranslate"><span class="pre">node.js</span></code> kernel capable of running insecure web applications from within the Jupyter Notebook with a tool like OWASP-ZAP for performing penetration testing. I found a couple of tutorials on this topic and it is certainly on my radar as a possible alternative to using Docker for the same purposes.</p></li>
 <li><p>Cleaning up the repository and environment install so that it is leaner and faster.</p></li>
+<li><p>Implement custom admonitions with graphic much like the native-MyST Markdown flavored admonitions.</p></li>
 </ul>
 </section>
 <section id="closing-remarks">
@@ -263,6 +271,8 @@
             <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="01-the-env.html" class="btn btn-neutral float-right" title="The Environment: A Local conda Installation">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral" title="Using Jupyter Notebooks, MyST Markdown, &amp; Sphinx to Publish Professional Quality HTML &amp; LaTeX Documents Tutorial"><span class="fa fa-arrow-circle-left"></span> Previous</a>
