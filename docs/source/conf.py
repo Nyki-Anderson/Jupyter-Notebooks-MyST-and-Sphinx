@@ -60,7 +60,7 @@ pygements_style = 'style.NordStyle'
 
 html_theme = 'sphinx_pdj_theme'
 html_static_path = ['./_static']
-# html_logo = 'path/to/logo.svg'
+html_logo = './logo.svg'
 html_favicon = './favicon.ico'
 html_theme_options = {}
 
