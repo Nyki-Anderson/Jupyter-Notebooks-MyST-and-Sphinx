@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.22)  8 JAN 2024 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.22)  8 JAN 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,7 +919,10 @@ LaTeX Font Info:    Trying to load font information for T1+txtt on input line 8
 .
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-))
+)
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <12> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 13.
+)
 \tf@toc=\write6
 \openout6 = `usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualit
 yhtmllatexdocuments.toc'.
@@ -937,27 +940,27 @@ File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [1
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<00-html-preview-1.jpg, id=100, 1903.11pt x 1084.05pt>
+<00-html-preview-1.jpg, id=130, 1903.11pt x 1084.05pt>
 File: 00-html-preview-1.jpg Graphic file (type jpg)
 <use 00-html-preview-1.jpg>
 Package pdftex.def Info: 00-html-preview-1.jpg  used on input line 143.
 (pdftex.def)             Requested size: 469.7362pt x 267.57126pt.
-<00-html-preview-2.jpg, id=101, 1903.11pt x 1084.05pt>
+<00-html-preview-2.jpg, id=131, 1903.11pt x 1084.05pt>
 File: 00-html-preview-2.jpg Graphic file (type jpg)
 <use 00-html-preview-2.jpg>
 Package pdftex.def Info: 00-html-preview-2.jpg  used on input line 150.
 (pdftex.def)             Requested size: 469.7362pt x 267.57126pt.
-<00-pdf-preview-1.jpg, id=102, 692.5875pt x 898.85812pt>
+<00-pdf-preview-1.jpg, id=132, 692.5875pt x 898.85812pt>
 File: 00-pdf-preview-1.jpg Graphic file (type jpg)
 <use 00-pdf-preview-1.jpg>
 Package pdftex.def Info: 00-pdf-preview-1.jpg  used on input line 157.
 (pdftex.def)             Requested size: 173.14644pt x 224.71397pt.
-<00-pdf-preview-2.jpg, id=103, 691.08188pt x 892.83563pt>
+<00-pdf-preview-2.jpg, id=133, 691.08188pt x 892.83563pt>
 File: 00-pdf-preview-2.jpg Graphic file (type jpg)
 <use 00-pdf-preview-2.jpg>
 Package pdftex.def Info: 00-pdf-preview-2.jpg  used on input line 164.
 (pdftex.def)             Requested size: 172.75949pt x 223.20836pt.
-<00-final-dir.jpg, id=104, 519.44063pt x 874.76813pt>
+<00-final-dir.jpg, id=134, 519.44063pt x 874.76813pt>
 File: 00-final-dir.jpg Graphic file (type jpg)
 <use 00-final-dir.jpg>
 Package pdftex.def Info: 00-final-dir.jpg  used on input line 174.
@@ -1030,11 +1033,52 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 Chapter 2.
-
-(./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
-documents.ind) [9
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <17.28> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 344.
+[9
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.58002pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.58002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
+
+[10]
+Chapter 3.
+[11
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.58002pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.58002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
+
+[12
+
+]
+Chapter 4.
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 27.58002pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.58002pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-15.58002pt}.
+
+[14
+
+]
+Chapter 5.
+
+(./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
+documents.ind) [15]
 (./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatex
 documents.aux)
  ***********
@@ -1043,14 +1087,14 @@ L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `usingjupyternotebooksmystmarkdownsphinxtopub
 lishprofessionalqualityhtmllatexdocuments.out' has not changed.
-(rerunfilecheck)             Checksum: 22276305CF8CCC5BF95376DFF2E5B4A0;2715.
+(rerunfilecheck)             Checksum: A2CCE0BC9CCAD37FF60D65F451402910;3856.
  ) 
 Here is how much of TeX's memory you used:
- 16418 strings out of 474175
- 276027 string characters out of 5745668
+ 16451 strings out of 474175
+ 276714 string characters out of 5745668
  1936457 words of memory out of 5000000
- 38303 multiletter control sequences out of 15000+600000
- 611586 words of font info for 85 fonts, out of 8000000 for 9000
+ 38322 multiletter control sequences out of 15000+600000
+ 612256 words of font info for 87 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  72i,11n,79p,936b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></us
@@ -1060,10 +1104,10 @@ ive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2
 023/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2023/t
 exmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
 Output written on usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalq
-ualityhtmllatexdocuments.pdf (13 pages, 1223322 bytes).
+ualityhtmllatexdocuments.pdf (19 pages, 1233914 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

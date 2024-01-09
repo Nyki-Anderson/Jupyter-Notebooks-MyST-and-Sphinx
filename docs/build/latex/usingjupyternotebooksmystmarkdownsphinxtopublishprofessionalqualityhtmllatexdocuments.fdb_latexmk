@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx"] 1704757494 "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments" 1704757496 0
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx" 1704757495 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx"] 1704761414 "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments" 1704761416 0
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx" 1704761415 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ilg"
   "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind"
   (rewritten before read)
-["pdflatex"] 1704757494 "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.tex" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.pdf" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments" 1704757496 0
+["pdflatex"] 1704761414 "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.tex" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.pdf" "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments" 1704761416 0
   "/Users/nykianderson/Library/texmf/tex/latex/local/latex3/latex3/support/etoolbox.sty" 1703492611 46849 2e9579b14d6c63dc333832567d904b26 ""
   "/Users/nykianderson/Library/texmf/tex/latex/local/latex3/latex3/texmf/tex/latex/base/alltt.sty" 1703358644 3137 a233b39ca0386551e489e3effbc2b359 ""
   "/Users/nykianderson/Library/texmf/tex/latex/local/latex3/latex3/texmf/tex/latex/base/atbegshi-ltx.sty" 1703358644 3045 909ba7bc518ac6e8e7ef69971d52f389 ""
@@ -155,7 +155,7 @@
   "00-pdf-preview-2.jpg" 1704740298 144113 863c821c3c1f81c77f66be9e751e2a36 ""
   "nbsphinx.sty" 1693136685 8202 a429e7504022e861d9f81e9a64e9928d ""
   "sphinx.sty" 1694647539 44560 f9fbf51072c954d129c9bd5284cc4ccf ""
-  "sphinxhighlight.sty" 1704757491 7553 83fb52292c17957d9f4aadcb28c57a87 ""
+  "sphinxhighlight.sty" 1704761411 7553 83fb52292c17957d9f4aadcb28c57a87 ""
   "sphinxlatexadmonitions.sty" 1694647539 10989 c38302e64c2bb47779f086869b246760 ""
   "sphinxlatexcontainers.sty" 1694647539 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1694647539 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -170,16 +170,16 @@
   "sphinxlatexstyletext.sty" 1694647539 8589 a7e8f95eb4fef6c1cd2623cd417d6467 ""
   "sphinxlatextables.sty" 1694647539 57830 16f2773b765508003aec5d08680f39b9 ""
   "sphinxmanual.cls" 1694647539 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1704757491 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1704761411 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1694647539 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1694647539 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackageboxes.sty" 1694647539 36615 1d74c63e665ede6c648fa08c42ea70fb ""
   "sphinxpackagefootnote.sty" 1694647539 15254 d93f70cf000a9adb198015bf1b2f136c ""
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.aux" 1704757496 6194 77d930b445596f0d7c5c35298ed530b4 "pdflatex"
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind" 1704757494 0 d41d8cd98f00b204e9800998ecf8427e "makeindex usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx"
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.out" 1704757496 2715 22276305cf8ccc5bf95376dff2e5b4a0 "pdflatex"
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.tex" 1704757488 19960 d01705867118d956a592f36bf87446d2 ""
-  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.toc" 1704757496 1238 fe0a5021ce0deca774cd003cd4b98cbe "pdflatex"
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.aux" 1704761416 8368 6b4a0184fb7307f1c01792649a4a98ba "pdflatex"
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind" 1704761414 0 d41d8cd98f00b204e9800998ecf8427e "makeindex usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx"
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.out" 1704761416 3856 a2cce0bc9ccad37ff60d65f451402910 "pdflatex"
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.tex" 1704761408 24581 09a8ee81862e9e82abf3b163c7bb84a2 ""
+  "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.toc" 1704761416 1813 46bb0977d7fdc9d51fc7d18d70a92565 "pdflatex"
   (generated)
   "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.aux"
   "usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.idx"

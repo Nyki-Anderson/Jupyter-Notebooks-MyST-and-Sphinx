@@ -260,8 +260,8 @@ This is a pretty massive undertaking when I think about the path that has led me
 Still, it has been massively rewarding to go through this process and I hope by sharing it with you, it can make an impact on your productivity too. Here’s a look ahead.
 
 
-\subsection{The Environment: A Local \sphinxstyleliteralintitle{\sphinxupquote{conda}} Environment to Keep Things Tidy}
-\label{\detokenize{_notebooks/00-the-goal:the-environment-a-local-conda-environment-to-keep-things-tidy}}
+\subsection{The Environment: A Local \sphinxstyleliteralintitle{\sphinxupquote{conda}} Installation}
+\label{\detokenize{_notebooks/00-the-goal:the-environment-a-local-conda-installation}}
 \sphinxAtStartPar
 We will utilize \sphinxhref{https://www.anaconda.com/download}{Anaconda} or \sphinxhref{https://docs.conda.io/projects/miniconda/en/latest/}{Miniconda} package manager \sphinxhref{https://docs.conda.io/projects/conda/en/stable/}{conda} for the majority of our environment build. We will of course automate the installation of packages though I will mention a few significant ones more critically. Automation will come in the form of very minimal bash scripting \textendash{}though I must mention it was much more involved when I was building the \sphinxhref{https://xeus-lua.readthedocs.io/en/latest/}{xeus\sphinxhyphen{}lua kernel} from source.
 
@@ -269,8 +269,8 @@ We will utilize \sphinxhref{https://www.anaconda.com/download}{Anaconda} or \sph
 As new packages are found necessary, the running version control file, \DUrole{xref,download,myst}{lib/environment.yml} will need to be updated accordingly. Keeping this running “log” of what is being installed is what makes this project so valuable in the long run because you are going to want a portable installation that can adapt to whatever your next publication need is.
 
 
-\subsection{The Configuration: Integrating Jupyter Notebook, MyST Markdown, \& Sphinx Documentation}
-\label{\detokenize{_notebooks/00-the-goal:the-configuration-integrating-jupyter-notebook-myst-markdown-sphinx-documentation}}
+\subsection{The Configuration: Integrating Three Tools into One}
+\label{\detokenize{_notebooks/00-the-goal:the-configuration-integrating-three-tools-into-one}}
 \sphinxAtStartPar
 This will, by far, be the most time consuming section to cover, as it took me days to come to the correct solution for integrating all three tools. There is extensive documentation \textendash{}as you might guess\textendash{} for all three of these programs but there are significant holes in communication as far as where configuration directives can legally be called and exactly where to put the files when you figure it out.
 
@@ -287,8 +287,8 @@ Staying local also meant I got to keep using VS Code which runs Jupyter Notebook
 As far as the configuration files go themselves, they are written in \sphinxcode{\sphinxupquote{.yml}} mostly with a few exceptions. The Sphinx configuration file is a python script called \DUrole{xref,download,myst}{conf.py}, the {\hyperref[\detokenize{index::doc}]{\sphinxcrossref{\DUrole{std,std-doc}{index.rst}}}} is written in reStructureText (a derivative of Markdown), and there are a couple versions of a \DUrole{xref,download,myst}{Makefile} \textendash{}or\DUrole{xref,download,myst}{make.bat}\textendash{} to bring it all together. Details are best left to that respective chapter.
 
 
-\subsection{The Deployment: Publishing Our Work in its Best Format}
-\label{\detokenize{_notebooks/00-the-goal:the-deployment-publishing-our-work-in-its-best-format}}
+\subsection{The Deployment: Publishing Our Work in its Finest Format}
+\label{\detokenize{_notebooks/00-the-goal:the-deployment-publishing-our-work-in-its-finest-format}}
 \sphinxAtStartPar
 This was probably the most frustrating part of the whole process because it was dependent on a lot of tools and techniques that I’ve never used before. The greatest difficulty came in the form of learning \sphinxhref{https://github.com/features/actions}{GitHub Actions and Workflows} \textendash{}or rather, not learning\textendash{} how to deploy to GitHub Pages in that way. I also experimented with \sphinxhref{https://docs.readthedocs.io/en/stable/}{Read the Docs} deployment which is still tied to a GitHub repository but carries its own documentation and workflows. I found this method much less transparent than the pure GitHub method and eventually found the simplest tutorial ever. In this chapter, we will explore the various methods and how they are supposed to work.
 
@@ -323,6 +323,10 @@ Integrating a more flexible \sphinxcode{\sphinxupquote{node.js}} kernel capable 
 \sphinxAtStartPar
 Cleaning up the repository and environment install so that it is leaner and faster.
 
+\item {} 
+\sphinxAtStartPar
+Implement custom admonitions with graphic much like the native\sphinxhyphen{}MyST Markdown flavored admonitions.
+
 \end{itemize}
 
 
@@ -333,6 +337,86 @@ It is still uncertain how many, if any of these topics I will be able to cover i
 
 \sphinxAtStartPar
 Now, let’s get our hands on some code!
+
+\sphinxstepscope
+
+
+\chapter{The Environment: A Local \sphinxstyleliteralintitle{\sphinxupquote{conda}} Installation}
+\label{\detokenize{_notebooks/01-the-env:the-environment-a-local-conda-installation}}\label{\detokenize{_notebooks/01-the-env::doc}}
+\sphinxAtStartPar
+Now that we can start in with the actual coding, let’s get our ducks in a row. This chapter will focus on installing, building, and fine\sphinxhyphen{}tuning our development environment, all of which will run on a \sphinxcode{\sphinxupquote{Python}} virtual environment. This will be done locally for a number of reasons which may all become clear later in the {\hyperref[\detokenize{_notebooks/01-the-env:why-a-virtual-environment}]{\sphinxcrossref{\DUrole{std,std-ref}{Why A Virtual Environment?}}}}. All of this will allow us to use a \sphinxcode{\sphinxupquote{python3.12}} kernel for use within the Jupyter Notebook interface.
+
+\begin{sphinxadmonition}{note}{Objectives}
+
+\sphinxAtStartPar
+The aim of this chapter is to:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fully characterize the set of packages, tools, and other considerations that are required for Jupyter Notebook to function properly throughout its use.
+
+\item {} 
+\sphinxAtStartPar
+Determine what (if any) limitations we will have when developing a build\sphinxhyphen{}time script for a local \sphinxcode{\sphinxupquote{conda}} virtual environment vs. installing our full build into the \sphinxcode{\sphinxupquote{base}} environment.
+
+\item {} 
+\sphinxAtStartPar
+Automate the build process with a single command and test that environment is equivalent to the one we develop initially.
+
+\end{itemize}
+\end{sphinxadmonition}
+
+
+\section{Prerequisites}
+\label{\detokenize{_notebooks/01-the-env:prerequisites}}
+\sphinxAtStartPar
+The setup is fairly specific to the exact tools and their versions, though I did not have any issues that required me to downgrade any packages. Though, keep this detail in mind throughout the project, as any deviations could potentially break the build.
+
+\sphinxAtStartPar
+We will be using VS Code’s local version of the Jupyter Notebook software but little configuration is necessary on that front.
+
+
+\subsection{Why A Virtual Environment?}
+\label{\detokenize{_notebooks/01-the-env:why-a-virtual-environment}}
+
+\subsection{Considering Versions}
+\label{\detokenize{_notebooks/01-the-env:considering-versions}}
+\sphinxstepscope
+
+
+\chapter{The Configuration: Integrating Three Tools into One}
+\label{\detokenize{_notebooks/02-the-config:the-configuration-integrating-three-tools-into-one}}\label{\detokenize{_notebooks/02-the-config::doc}}
+\sphinxstepscope
+
+
+\chapter{The Deployment: Publishing Our Work in its Finest Format}
+\label{\detokenize{_notebooks/03-the-deploy:the-deployment-publishing-our-work-in-its-finest-format}}\label{\detokenize{_notebooks/03-the-deploy::doc}}
+\sphinxAtStartPar
+The purpose of this whole venture was to produce professional quality deliverables that let the content speak for itself. In this chapter, we will introduce a few of the options for doing so \textendash{}for free\textendash{} including publishing our static documentation site on \sphinxhref{https://pages.github.com/}{GitHub Pages} via three methods: (1) using the \sphinxcode{\sphinxupquote{ghp\sphinxhyphen{}import}} command at the command line (which was the only way I got working so far), (2) \sphinxhref{https://docs.github.com/en/actions}{Actions and Workflows}, and (3) from a branch. As well as a third method which involves publishing through your GitHub repository to the \sphinxhref{https://docs.readthedocs.io/en/stable/}{Read the Docs} client.
+
+\begin{sphinxadmonition}{note}{Objectives}
+
+\sphinxAtStartPar
+This chapter is due to wrap up the main purpose of the project, which was to share our documentation and ideas with a greater audience. To that aim, we will:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Finalize any content we wish to publish and determine the format(s) we are confident will reach the broadest audience or satisfy whatever deliverables we might have.
+
+\item {} 
+\sphinxAtStartPar
+Produce both a collection of linkable static web scripts as well as a LaTeX\sphinxhyphen{}rendered PDF printout worthy of professional scrutiny.
+
+\item {} 
+\sphinxAtStartPar
+Determine which methods of distribution work, which are more difficult or situation\sphinxhyphen{}biased, and which fit best with our current workflow.
+
+\item {} 
+\sphinxAtStartPar
+Clear up any remaining configuration errors and answer lingering examples of broken code or functionality.
+
+\end{itemize}
+\end{sphinxadmonition}
 
 
 \chapter{Indices and tables}

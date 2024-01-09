@@ -351,6 +351,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
 OUTPUT usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.toc
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
@@ -405,6 +406,7 @@ INPUT ./00-final-dir.jpg
 INPUT ./00-final-dir.jpg
 INPUT ./00-final-dir.jpg
 INPUT ./00-final-dir.jpg
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
 INPUT ./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind
 INPUT ./usingjupyternotebooksmystmarkdownsphinxtopublishprofessionalqualityhtmllatexdocuments.ind
