@@ -59,7 +59,7 @@ pygements_style = 'style.NordStyle'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_pdj_theme'
-html_static_path = []
+html_static_path = ['./_static']
 # html_logo = 'path/to/logo.svg'
 html_favicon = './_static/favicon.ico'
 html_theme_options = {}
